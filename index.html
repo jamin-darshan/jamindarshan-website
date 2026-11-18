@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="gu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jamin Darshan | જમીન દર્શન – જમીન અને પ્રોપર્ટી કન્સલ્ટન્સી</title>
+<meta name="description" content="Jamin Darshan – ખેતીની જમીન, NA પ્લોટ, રહેણાક, કોમર્શિયલ અને ઈન્ડસ્ટ્રીયલ પ્રોપર્ટીની ખરીદ-વેચાણ અને કન્સલ્ટન્સી. ખરીદતા પહેલા જમીનનું હેલ્થ ચેકઅપ. વિશ્વાસના પાયા પર સમૃદ્ધિનું નિર્માણ.">
+<meta property="og:title" content="Jamin Darshan – જમીન અને પ્રોપર્ટી કન્સલ્ટન્સી">
+<meta property="og:description" content="વિશ્વાસના પાયા પર સમૃદ્ધિનું નિર્માણ. જમીન, પ્લોટ, રહેણાક, કોમર્શિયલ, ઈન્ડસ્ટ્રીયલ પ્રોપર્ટી.">
+<meta property="og:image" content="assets/og-cover.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#033c22">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Hind+Vadodara:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green-900:#01200f; --green-800:#033c22; --green-700:#0a4a2a; --green-600:#13603a;
+  --leaf:#3f9a2c;
+  --gold:#e6c27a; --gold-light:#f6dc9f; --gold-dark:#a8762d;
+  --cream:#f5f1e4; --cream-2:#fbf8ef; --ink:#14251b; --muted:#56685d; --line:#e2dac3;
+  --radius:18px;
+  --gold-grad:linear-gradient(135deg,#f6dc9f 0%,#e6c27a 40%,#b8873a 100%);
+  --font:"Hind Vadodara","Poppins",system-ui,sans-serif;
+  --latin:"Poppins","Hind Vadodara",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{font-family:var(--font);color:var(--ink);background:var(--cream-2);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.en{font-family:var(--latin)}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:600;font-size:17px;border:0;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s;font-family:var(--font);white-space:nowrap}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-gold{background:var(--gold-grad);color:var(--green-900);box-shadow:0 8px 24px -8px rgba(230,194,122,.6)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 28px -8px rgba(230,194,122,.8)}
+.btn-wa{background:#25d366;color:#fff}
+.btn-wa:hover{transform:translateY(-2px);background:#1fbe5a}
+.btn-line{border:1.5px solid rgba(246,220,159,.55);color:var(--gold-light);background:transparent}
+.btn-line:hover{background:rgba(246,220,159,.1)}
+.btn-green{background:var(--green-800);color:var(--gold-light)}
+.btn-green:hover{background:var(--green-700);transform:translateY(-2px)}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(251,248,239,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.nav .logo img{height:46px;width:auto}
+.nav ul{display:flex;gap:28px;list-style:none;font-weight:500;font-size:16px}
+.nav ul a{color:var(--green-800);position:relative;padding:4px 0}
+.nav ul a::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--gold-dark);transition:width .25s}
+.nav ul a:hover::after{width:100%}
+.nav .btn{padding:10px 20px;font-size:15px}
+.menu-btn{display:none;background:none;border:0;cursor:pointer;color:var(--green-800);padding:8px}
+.menu-btn svg{width:28px;height:28px}
+
+/* Hero */
+.hero{position:relative;background:radial-gradient(1200px 600px at 80% 0%,#0d5a33 0%,transparent 60%),radial-gradient(900px 500px at 0% 100%,#05301b 0%,transparent 60%),var(--green-800);color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:18px;border:1px solid rgba(230,194,122,.35);border-radius:22px;pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(246,220,159,.5) 1px,transparent 1.5px);background-size:46px 46px;opacity:.12;pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding:88px 0 96px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:var(--gold-grad);color:var(--green-900);font-weight:600;padding:6px 18px;border-radius:999px;font-size:15px}
+.hero h1{font-size:clamp(34px,5.2vw,60px);line-height:1.25;margin:22px 0 18px;font-weight:700}
+.hero h1 .gold{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:clamp(17px,1.6vw,20px);color:#d6e4da;max-width:560px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+.hero-stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.hero-stats span{display:inline-flex;align-items:center;gap:8px;font-size:15px;color:var(--gold-light);border:1px solid rgba(230,194,122,.3);padding:6px 14px;border-radius:999px;background:rgba(0,0,0,.12)}
+.hero-stats svg{width:16px;height:16px}
+
+.phone{position:relative;justify-self:center;width:min(300px,78vw);aspect-ratio:9/16;border-radius:34px;padding:10px;background:linear-gradient(160deg,#f6dc9f,#a8762d 60%,#e6c27a);box-shadow:0 40px 80px -30px rgba(0,0,0,.7)}
+.phone video,.phone img{width:100%;height:100%;object-fit:cover;border-radius:26px;background:#000}
+.phone .sound{position:absolute;left:22px;bottom:22px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;cursor:pointer;display:grid;place-items:center}
+.phone .sound svg{width:20px;height:20px}
+.float-badge{position:absolute;left:-64px;top:-28px;z-index:2;background:var(--cream);color:var(--green-800);border-radius:14px;padding:10px 14px;display:flex;align-items:center;gap:10px;font-weight:600;font-size:14px;box-shadow:0 16px 30px -12px rgba(0,0,0,.5);line-height:1.3}
+.float-badge img{width:34px;height:34px}
+.float-badge.b2{left:auto;right:-48px;top:auto;bottom:-26px}
+.float-badge .chk{width:30px;height:30px;border-radius:50%;background:var(--green-800);color:var(--gold);display:grid;place-items:center}
+.float-badge .chk svg{width:16px;height:16px}
+
+/* Values strip */
+.values{background:var(--green-900);color:var(--gold-light);border-top:1px solid rgba(230,194,122,.3)}
+.values .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 0;padding:18px 0}
+.values span{font-weight:600;font-size:18px;padding:0 26px;position:relative}
+.values span+span::before{content:"";position:absolute;left:0;top:20%;height:60%;width:1px;background:rgba(230,194,122,.5)}
+
+/* Sections */
+section{padding:96px 0}
+.head{text-align:center;max-width:720px;margin:0 auto 52px}
+.eyebrow{display:inline-block;font-family:var(--latin);letter-spacing:.18em;text-transform:uppercase;font-size:13px;font-weight:600;color:var(--gold-dark);margin-bottom:10px}
+.head h2{font-size:clamp(28px,3.6vw,42px);line-height:1.3;color:var(--green-800);font-weight:700}
+.head p{color:var(--muted);margin-top:12px;font-size:18px}
+.divider{display:flex;align-items:center;justify-content:center;gap:8px;margin:16px auto 0;color:var(--gold-dark)}
+.divider i{display:block;height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--gold-dark))}
+.divider i:last-child{transform:scaleX(-1)}
+.divider b{width:8px;height:8px;background:var(--gold-dark);transform:rotate(45deg)}
+
+/* Services */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;transition:transform .25s,box-shadow .25s,border-color .25s;position:relative;overflow:hidden}
+.svc::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--gold-grad);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 24px 40px -24px rgba(3,60,34,.35);border-color:transparent}
+.svc:hover::after{transform:scaleX(1)}
+.coin{width:72px;height:72px;border-radius:50%;background:var(--gold-grad);display:grid;place-items:center;color:var(--green-800);box-shadow:inset 0 -4px 8px rgba(168,118,45,.45),0 8px 18px -8px rgba(168,118,45,.7);margin-bottom:20px}
+.coin svg{width:36px;height:36px}
+.svc h3{font-size:23px;color:var(--green-800);line-height:1.35}
+.svc .sub{color:var(--gold-dark);font-weight:600;margin-top:2px}
+.svc p{color:var(--muted);margin-top:10px;font-size:16px}
+
+/* Health report */
+.health{background:var(--green-800);color:#fff;position:relative;overflow:hidden}
+.health::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 400px at 100% 50%,#0f6038 0,transparent 70%)}
+.health .head h2{color:#fff}
+.health .head p{color:#c4d6ca}
+.health-grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.health-copy h3{font-size:clamp(28px,3.4vw,40px);line-height:1.3;margin:14px 0}
+.health-copy h3 .gold{color:var(--gold)}
+.health-copy p{color:#c4d6ca;font-size:18px;margin-bottom:28px}
+.pulse{width:100%;max-width:420px;height:60px;color:#4ade80;margin-bottom:12px}
+.pulse path{stroke-dasharray:600;stroke-dashoffset:600;animation:beat 2.8s linear infinite}
+@keyframes beat{to{stroke-dashoffset:0}}
+.report{background:var(--cream);color:var(--ink);border-radius:20px;overflow:hidden;box-shadow:0 40px 70px -30px rgba(0,0,0,.6);max-width:480px;justify-self:center;width:100%}
+.report-top{background:var(--green-700);color:#fff;display:flex;align-items:center;gap:12px;padding:16px 20px}
+.report-top img{width:40px;height:40px;background:#fff;border-radius:50%;padding:4px}
+.report-top b{font-size:20px;display:block;line-height:1.2}
+.report-top small{font-family:var(--latin);font-size:11px;letter-spacing:.14em;color:var(--gold)}
+.report-top .plus{margin-left:auto;color:var(--gold);font-size:34px;font-weight:700;line-height:1}
+.report-meta{display:flex;justify-content:space-between;font-size:14px;padding:10px 20px;border-bottom:1px solid var(--line);color:var(--muted)}
+.report-head{display:flex;justify-content:space-between;background:#e3eee5;font-weight:600;font-size:14px;padding:8px 20px;color:var(--green-800)}
+.check{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 20px;border-bottom:1px solid var(--line)}
+.check b{display:block;font-size:16px;line-height:1.3}
+.check small{color:var(--muted);font-size:13.5px}
+.ok{display:inline-flex;align-items:center;gap:5px;background:var(--green-600);color:#fff;font-size:13px;font-weight:600;border-radius:999px;padding:3px 12px;flex:none;opacity:0;transform:scale(.6);transition:opacity .35s,transform .35s}
+.ok svg{width:13px;height:13px}
+.report.run .ok{opacity:1;transform:none}
+.score{display:flex;align-items:center;gap:14px;padding:16px 20px;font-weight:600}
+.bar{flex:1;height:12px;background:#e2dac3;border-radius:999px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#13603a,#3f9a2c);border-radius:inherit;transition:width 2.6s ease}
+.report.run .bar i{width:96%}
+.score em{font-style:normal;font-family:var(--latin);color:var(--green-700);min-width:44px;text-align:right}
+
+/* Documents */
+.docs-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.doc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 18px 24px;text-align:center;position:relative}
+.doc .num{position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:34px;height:34px;border-radius:50%;background:var(--gold-grad);color:var(--green-900);font-weight:700;display:grid;place-items:center;font-family:var(--latin);font-size:15px;box-shadow:0 4px 10px -4px rgba(168,118,45,.8)}
+.paper{width:78px;height:92px;margin:6px auto 18px;background:var(--cream);border:1px solid var(--line);border-radius:6px;position:relative;padding:10px 10px 0;box-shadow:0 10px 18px -12px rgba(0,0,0,.35)}
+.paper b{display:block;font-size:14px;color:var(--green-800);font-family:var(--latin)}
+.paper i{display:block;height:3px;border-radius:2px;background:#d8cfb4;margin-top:7px}
+.paper i:nth-of-type(2){width:80%}.paper i:nth-of-type(3){width:60%}
+.paper .tick{position:absolute;right:-10px;bottom:-10px;width:28px;height:28px;border-radius:50%;background:var(--gold-grad);display:grid;place-items:center;color:#fff}
+.paper .tick svg{width:15px;height:15px}
+.doc h3{font-size:19px;color:var(--green-800);line-height:1.35}
+.doc p{font-size:15px;color:var(--muted);margin-top:6px}
+
+/* Process */
+.process{background:var(--cream)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;position:relative}
+.steps::before{content:"";position:absolute;top:36px;left:16%;right:16%;height:2px;background:repeating-linear-gradient(90deg,var(--gold-dark) 0 10px,transparent 10px 18px)}
+.step{text-align:center;position:relative}
+.step .n{width:72px;height:72px;margin:0 auto 20px;border-radius:50%;background:var(--green-800);color:var(--gold);display:grid;place-items:center;font-size:28px;font-weight:700;font-family:var(--latin);border:4px solid var(--cream);box-shadow:0 0 0 2px var(--gold-dark)}
+.step h3{font-size:24px;color:var(--green-800)}
+.step p{color:var(--muted);margin-top:6px;max-width:290px;margin-inline:auto}
+.process-cta{text-align:center;margin-top:48px}
+
+/* Videos */
+.videos-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.reel{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:9/16;background:var(--green-900);cursor:pointer;border:0;padding:0;box-shadow:0 18px 30px -20px rgba(0,0,0,.6)}
+.reel img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.reel:hover img{transform:scale(1.05)}
+.reel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(1,32,15,.92))}
+.reel .play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;border-radius:50%;background:rgba(246,220,159,.92);display:grid;place-items:center;color:var(--green-900);z-index:1;transition:transform .2s}
+.reel:hover .play{transform:translate(-50%,-50%) scale(1.1)}
+.reel .play svg{width:22px;height:22px;margin-left:3px}
+.reel span{position:absolute;left:12px;right:12px;bottom:12px;z-index:1;color:#fff;font-weight:600;font-size:15px;line-height:1.3;text-align:left;font-family:var(--font)}
+.modal{position:fixed;inset:0;z-index:100;background:rgba(1,20,10,.88);display:none;align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal video{max-height:88vh;width:auto;max-width:100%;aspect-ratio:9/16;border-radius:16px;background:#000}
+.modal .x{position:absolute;top:18px;right:18px;width:46px;height:46px;border-radius:50%;border:0;background:var(--gold-grad);color:var(--green-900);font-size:26px;cursor:pointer;line-height:1}
+
+/* Contact */
+.contact{background:var(--green-900);color:#fff;position:relative;overflow:hidden}
+.contact::before{content:"";position:absolute;inset:0;background:radial-gradient(800px 400px at 0 0,#0b4a2a 0,transparent 70%)}
+.contact .head h2{color:#fff}
+.contact .head p{color:#bcd0c3}
+.contact-grid{position:relative;display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:start}
+.people{display:grid;gap:16px}
+.person{display:flex;align-items:center;gap:16px;background:rgba(255,255,255,.04);border:1px solid rgba(230,194,122,.28);border-radius:var(--radius);padding:18px 20px}
+.avatar{width:56px;height:56px;border-radius:50%;background:var(--gold-grad);color:var(--green-900);display:grid;place-items:center;font-weight:700;font-family:var(--latin);font-size:20px;flex:none}
+.person .who{flex:1;min-width:0}
+.person b{font-family:var(--latin);letter-spacing:.08em;color:var(--gold-light);font-size:16px;display:block}
+.person a.tel{font-family:var(--latin);font-size:20px;font-weight:500}
+.person .acts{display:flex;gap:8px}
+.icon-btn{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;transition:transform .2s}
+.icon-btn:hover{transform:scale(1.08)}
+.icon-btn svg{width:20px;height:20px}
+.icon-btn.call{background:var(--gold-grad);color:var(--green-900)}
+.icon-btn.wa{background:#25d366;color:#fff}
+.area{margin-top:8px;display:flex;gap:14px;align-items:flex-start;color:#c4d6ca;font-size:16px;padding:6px 4px}
+.area svg{width:22px;height:22px;color:var(--gold);flex:none;margin-top:3px}
+.form{background:var(--cream);color:var(--ink);border-radius:22px;padding:32px;box-shadow:0 30px 60px -30px rgba(0,0,0,.7)}
+.form h3{font-size:24px;color:var(--green-800)}
+.form > p{color:var(--muted);font-size:15px;margin:4px 0 20px}
+.field{margin-bottom:14px}
+.field label{display:block;font-weight:600;font-size:15px;margin-bottom:6px;color:var(--green-800)}
+.field input,.field select,.field textarea{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);transition:border-color .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--gold-dark)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{margin:0}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips span{display:inline-block;padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);background:#fff;cursor:pointer;font-weight:500;font-size:15px;color:var(--ink);transition:all .2s}
+.chips input:checked+span{background:var(--green-800);border-color:var(--green-800);color:var(--gold-light)}
+.chips input:focus-visible+span{outline:2px solid var(--gold-dark);outline-offset:2px}
+.form .btn{width:100%;margin-top:6px}
+
+.hotline{background:rgba(255,255,255,.04);border:1px solid rgba(230,194,122,.35);border-radius:22px;padding:28px}
+.hl-top{display:flex;align-items:center;gap:14px}
+.hl-top img{width:52px;height:52px;background:var(--cream);border-radius:50%;padding:6px;flex:none}
+.hl-label{display:block;color:var(--gold-light);font-weight:700;font-size:22px;line-height:1.3}
+.hl-sub{display:block;color:#bcd0c3;font-size:15px}
+.hl-num{display:block;font-family:var(--latin);font-weight:600;font-size:clamp(34px,4.4vw,46px);letter-spacing:.02em;color:#fff;margin:22px 0 20px;line-height:1.1}
+.hl-acts{display:grid;grid-template-columns:1fr;gap:12px}
+@media (max-width:420px){.hl-acts{grid-template-columns:1fr}.hotline{padding:22px}}
+.social{margin-top:22px}
+.social-title{display:block;color:var(--gold-light);font-weight:600;font-size:17px;margin-bottom:12px}
+.social-links{display:flex;flex-wrap:wrap;gap:10px}
+.soc{display:inline-flex;align-items:center;gap:8px;padding:6px 18px 6px 6px;border-radius:999px;border:1px solid rgba(230,194,122,.35);color:#fff;font-family:var(--latin);font-size:15px;font-weight:500;transition:background .2s,border-color .2s}
+.soc svg{width:30px;height:30px;padding:6px;border-radius:50%;color:#fff;flex:none}
+.soc.ig svg{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}
+.soc.fb svg{background:#1877f2}
+.soc.yt svg{background:#ff0000}
+.soc:hover{background:rgba(230,194,122,.12);border-color:var(--gold)}
+.wa-strip{margin-top:18px;display:flex;align-items:center;gap:14px;background:#25d366;color:#fff;border-radius:18px;padding:14px 18px;transition:transform .2s,background .2s}
+.wa-strip:hover{background:#1fbe5a;transform:translateY(-2px)}
+.wa-ico{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;flex:none}
+.wa-ico svg{width:26px;height:26px}
+.wa-txt{flex:1;min-width:0}
+.wa-txt b{display:block;font-size:18px;line-height:1.3}
+.wa-txt small{display:block;font-size:14px;opacity:.92}
+.wa-go{font-size:24px;font-weight:600}
+.hl-mail{display:flex;align-items:center;gap:10px;margin-top:16px;padding-top:16px;border-top:1px solid rgba(230,194,122,.22);font-family:var(--latin);font-size:17px;color:#e3ece6;min-width:0}
+.hl-mail svg{width:22px;height:22px;color:var(--gold);flex:none}
+.hl-mail a{overflow-wrap:anywhere}
+.hl-mail a:hover{color:var(--gold-light)}
+/* Footer */
+footer{background:#000f07;color:#9fb5a7;padding:48px 0 28px;font-size:15px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:center}
+.foot .brand{display:flex;align-items:center;gap:14px}
+.foot .plate{background:var(--cream);border-radius:12px;padding:8px 14px;border:1px solid var(--gold-dark)}
+.foot .plate img{height:40px;width:auto}
+.foot .tag{color:var(--gold-light);font-weight:600;font-size:17px}
+.foot nav{display:flex;flex-wrap:wrap;gap:20px}
+.foot nav a:hover{color:var(--gold-light)}
+.copy{border-top:1px solid rgba(255,255,255,.08);margin-top:32px;padding-top:20px;text-align:center;font-family:var(--latin);font-size:13px}
+
+/* Floating WhatsApp */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 12px 26px -8px rgba(0,0,0,.45);animation:pop 2.4s ease-in-out infinite}
+.fab svg{width:32px;height:32px}
+@keyframes pop{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.55),0 12px 26px -8px rgba(0,0,0,.45)}50%{box-shadow:0 0 0 14px rgba(37,211,102,0),0 12px 26px -8px rgba(0,0,0,.45)}}
+
+/* Reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+/* Responsive */
+@media (max-width:1080px){
+  .videos-grid{grid-template-columns:repeat(3,1fr)}
+  .docs-grid{grid-template-columns:repeat(3,1fr);row-gap:34px}
+}
+@media (max-width:900px){
+  .nav ul{position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;background:var(--cream-2);border-bottom:1px solid var(--line);display:none;padding:8px 16px 16px}
+  .nav ul.open{display:flex}
+  .nav ul a{display:block;padding:12px 4px;border-bottom:1px solid var(--line)}
+  .menu-btn{display:block}
+  .nav .btn{display:none}
+  .hero-grid{grid-template-columns:1fr;padding:64px 0 72px;text-align:center}
+  .hero p.lead{margin-inline:auto}
+  .hero-ctas,.hero-stats{justify-content:center}
+  .float-badge{left:-40px}.float-badge.b2{right:-30px}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .health-grid,.contact-grid{grid-template-columns:1fr}
+  .health-copy{text-align:center}
+  .pulse{margin-inline:auto}
+  .steps{grid-template-columns:1fr;gap:36px}
+  .steps::before{display:none}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section{padding:68px 0}
+  .head{margin-bottom:38px}
+  .nav .logo img{height:38px}
+  .hero::before{inset:8px;border-radius:16px}
+  .hero-ctas .btn{width:100%}
+  .float-badge{display:none}
+  .phone{width:min(240px,70vw);border-radius:28px;padding:8px}
+  .phone video{border-radius:21px}
+  .values span{font-size:15px;padding:0 12px}
+  .services-grid{grid-template-columns:1fr}
+  .svc{padding:26px 22px;display:grid;grid-template-columns:auto 1fr;column-gap:18px}
+  .svc .coin{width:60px;height:60px;grid-row:span 3;margin:0}
+  .svc .coin svg{width:30px;height:30px}
+  .svc h3{font-size:20px}
+  .docs-grid{grid-template-columns:1fr 1fr}
+  .docs-grid .doc:last-child{grid-column:span 2}
+  .videos-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .row2{grid-template-columns:1fr}
+  .form{padding:24px 20px}
+  .person{padding:14px}
+  .avatar{width:46px;height:46px;font-size:17px}
+  .person a.tel{font-size:17px}
+  .icon-btn{width:40px;height:40px}
+  .foot{flex-direction:column;text-align:center}
+  .foot .brand{flex-direction:column}
+  .foot nav{justify-content:center}
+}
+</style>
+</head>
+<body>
+
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+  <symbol id="i-call" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M7 4.5v15a1 1 0 0 0 1.5.9l12-7.5a1 1 0 0 0 0-1.8l-12-7.5A1 1 0 0 0 7 4.5Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
+  <symbol id="i-mute" viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3Zm13.6 3 2.7-2.7-1.4-1.4-2.7 2.7-2.7-2.7-1.4 1.4 2.7 2.7-2.7 2.7 1.4 1.4 2.7-2.7 2.7 2.7 1.4-1.4-2.7-2.7Z"/></symbol>
+  <symbol id="i-sound" viewBox="0 0 24 24"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3Zm13.5 3A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4ZM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6Z"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="#home" class="logo" aria-label="Jamin Darshan"><img src="assets/logo.png" alt="Jamin Darshan લોગો" width="1400" height="598"></a>
+    <ul id="menu">
+      <li><a href="#services">સેવાઓ</a></li>
+      <li><a href="#health">લેન્ડ હેલ્થ રિપોર્ટ</a></li>
+      <li><a href="#documents">ડોક્યુમેન્ટ</a></li>
+      <li><a href="#process">જમીન વેચો</a></li>
+      <li><a href="#videos">વિડિયો</a></li>
+      <li><a href="#contact">સંપર્ક</a></li>
+    </ul>
+    <a href="tel:+918200017579" class="btn btn-green"><svg><use href="#i-call"/></svg><span class="en">82000 17579</span></a>
+    <button class="menu-btn" aria-label="મેનુ" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home" style="padding:0">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="pill">જમીન · પ્લોટ · પ્રોપર્ટી કન્સલ્ટન્સી</span>
+      <h1>વિશ્વાસના પાયા પર<br><span class="gold">સમૃદ્ધિનું નિર્માણ</span></h1>
+      <p class="lead">ખેતીની જમીન, NA પ્લોટ, રહેણાક, કોમર્શિયલ અને ઈન્ડસ્ટ્રીયલ પ્રોપર્ટી — ખરીદવી હોય કે વેચવી, ડોક્યુમેન્ટની ચકાસણીથી લઈને દસ્તાવેજ સુધી અમે તમારી સાથે છીએ.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="https://wa.me/918200017579?text=%E0%AA%A8%E0%AA%AE%E0%AA%B8%E0%AB%8D%E0%AA%A4%E0%AB%87%2C%20%E0%AA%AE%E0%AA%BE%E0%AA%B0%E0%AB%87%20%E0%AA%9C%E0%AA%AE%E0%AB%80%E0%AA%A8%2F%E0%AA%AA%E0%AB%8D%E0%AA%B0%E0%AB%8B%E0%AA%AA%E0%AA%B0%E0%AB%8D%E0%AA%9F%E0%AB%80%20%E0%AA%B5%E0%AA%BF%E0%AA%B6%E0%AB%87%20%E0%AA%AE%E0%AA%BE%E0%AA%B9%E0%AA%BF%E0%AA%A4%E0%AB%80%20%E0%AA%9C%E0%AB%8B%E0%AA%88%E0%AA%8F%20%E0%AA%9B%E0%AB%87." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp કરો</a>
+        <a class="btn btn-line" href="#health">જમીનનું હેલ્થ ચેકઅપ</a>
+      </div>
+      <div class="hero-stats">
+        <span><svg><use href="#i-check"/></svg>ડોક્યુમેન્ટ વેરિફિકેશન</span>
+        <span><svg><use href="#i-check"/></svg>માર્કેટ પ્રમાણે સાચો ભાવ</span>
+        <span><svg><use href="#i-check"/></svg>સુરક્ષિત સોદો</span>
+      </div>
+    </div>
+    <div class="phone reveal">
+      <video id="heroVid" muted loop playsinline preload="none" poster="videos/earth-zoom.jpg">
+        <source src="videos/earth-zoom.mp4" type="video/mp4">
+      </video>
+      <button class="sound" id="soundBtn" aria-label="અવાજ ચાલુ કરો"><svg><use href="#i-mute"/></svg></button>
+      <div class="float-badge"><img src="assets/icon.png" alt="">આકાશથી જમીન સુધી,<br>દરેક વિગત પર નજર</div>
+      <div class="float-badge b2"><span class="chk"><svg><use href="#i-check"/></svg></span>ટાઇટલ ક્લિયર<br>જમીન</div>
+    </div>
+  </div>
+</section>
+
+<div class="values" aria-label="અમારા મૂલ્યો">
+  <div class="wrap"><span>વિશ્વાસ</span><span>પારદર્શિતા</span><span>યોગ્ય માર્ગદર્શન</span><span>સારું રોકાણ</span><span>લાંબા સંબંધ</span></div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Our Services</span>
+      <h2>અમારી સેવાઓ</h2>
+      <p>જમીન અને પ્રોપર્ટીને લગતી દરેક જરૂરિયાત — એક જ જગ્યાએ.</p>
+      <div class="divider"><i></i><b></b><i></i></div>
+    </div>
+    <div class="services-grid">
+      <article class="svc reveal">
+        <div class="coin"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M20 24V14"/><path fill="currentColor" stroke="none" d="M20 15c-1-5-5-7-10-6 0 5 4 8 10 6Zm0-2c1-5 5-7 10-6 0 5-4 8-10 6Z"/><path d="M5 27c8-4 22-4 30 0M7 31c7-3 19-3 26 0M10 35c5-2 15-2 20 0"/></svg></div>
+        <h3>ખેતીની જમીન</h3><div class="sub">ખરીદ – વેચાણ</div>
+        <p>તમારા બજેટ અને જરૂરિયાત પ્રમાણે યોગ્ય ખેતીની જમીન શોધવામાં અને વેચવામાં મદદ.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="coin"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M9 26h22l5 9H4l5-9Z"/><path d="M14.5 26 12 35M25.5 26 28 35M6.5 30.5h27"/><path fill="currentColor" stroke="none" d="M20 4a6 6 0 0 0-6 6c0 4.5 6 11 6 11s6-6.5 6-11a6 6 0 0 0-6-6Zm0 8.3a2.3 2.3 0 1 1 0-4.6 2.3 2.3 0 0 1 0 4.6Z"/></svg></div>
+        <h3>NA પ્લોટ</h3><div class="sub">અને સ્કીમ</div>
+        <p>NA મંજૂરી અને લે-આઉટ ચેક કરેલા પ્લોટ તથા નવી સ્કીમની સંપૂર્ણ માહિતી.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="coin"><svg viewBox="0 0 40 40" fill="currentColor"><path d="M20 6 4 19h4v15h9v-9h6v9h9V19h4L28 12.6V7h-4v2.3L20 6Z"/></svg></div>
+        <h3>રહેણાક પ્રોપર્ટી</h3><div class="sub">બંગલા / પ્લોટ / ફ્લેટ</div>
+        <p>પરિવાર માટે યોગ્ય ઘર — લોકેશન, ભાવ અને કાગળોની ચકાસણી સાથે.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="coin"><svg viewBox="0 0 40 40" fill="currentColor"><path d="M8 35V9l14-4v30h-4v-5h-4v5H8Zm4-22v3h3v-3h-3Zm0 6v3h3v-3h-3Zm0 6v3h3v-3h-3Zm6-12v3h2v-3h-2Zm0 6v3h2v-3h-2Zm0 6v3h2v-3h-2Zm6-8 8 2v17h-8V17Zm3 4v2h2v-2h-2Zm0 5v2h2v-2h-2ZM5 35h30v2H5z"/></svg></div>
+        <h3>કોમર્શિયલ પ્રોપર્ટી</h3><div class="sub">દુકાન / શોપ / ઓફિસ</div>
+        <p>બિઝનેસ માટે યોગ્ય લોકેશન પર દુકાન, શોપ અને ઓફિસ — ખરીદ, વેચાણ અને ભાડે.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="coin"><svg viewBox="0 0 40 40" fill="currentColor"><path d="M29 5h4v12h-4zM4 34V20l8 5v-5l8 5v-5l8 5v-6h7v15H4Zm5-6v3h3v-3H9Zm6 0v3h3v-3h-3Zm6 0v3h3v-3h-3Z"/></svg></div>
+        <h3>ઈન્ડસ્ટ્રીયલ પ્લોટ</h3><div class="sub">અને જમીન</div>
+        <p>ફેક્ટરી, ગોડાઉન અને ઉદ્યોગ માટે ઝોન અને રસ્તા ચેક કરેલી જમીન.</p>
+      </article>
+      <article class="svc reveal">
+        <div class="coin"><svg viewBox="0 0 40 40" fill="currentColor"><path d="M20 4 11 12h3v7h4.5v-4h3v4H26v-7h3L20 4ZM3 25h5.5c1.3 0 2.6.4 3.6 1.2L14 28h7a2.5 2.5 0 0 1 0 5h-7v1.5h7.5a4 4 0 0 0 3-1.4l5.8-6.6a2.2 2.2 0 0 1 3.4 2.8l-6.6 8.4a6 6 0 0 1-4.8 2.3H3V25Z"/></svg></div>
+        <h3>બધી પ્રકારની</h3><div class="sub">પ્રોપર્ટી કન્સલ્ટન્સી</div>
+        <p>લીગલ માર્ગદર્શન, સાઇટ વિઝિટ અને દસ્તાવેજ / રજીસ્ટ્રેશન સુધી સંપૂર્ણ મદદ.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- LAND HEALTH REPORT -->
+<section class="health" id="health">
+  <div class="wrap health-grid">
+    <div class="health-copy reveal">
+      <span class="pill">ખરીદતા પહેલા જમીનનું ચેકઅપ</span>
+      <h3>જમીન ખરીદતા પહેલા કરાવો<br><span class="gold">લેન્ડ હેલ્થ ચેકઅપ!</span></h3>
+      <svg class="pulse" viewBox="0 0 420 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"><path d="M0 30h120l12-18 14 40 16-48 14 52 12-26h232"/></svg>
+      <p>જેમ શરીરનું ચેકઅપ થાય, તેમ જમીનનું પણ. 7/12 થી લઈને રસ્તા અને માપણી સુધી — 6 મુખ્ય તપાસ કરીને જ અમે તમને સોદાની સલાહ આપીએ છીએ, જેથી તમારું રોકાણ સુરક્ષિત રહે.</p>
+      <a class="btn btn-gold" href="https://wa.me/918200017579?text=%E0%AA%A8%E0%AA%AE%E0%AA%B8%E0%AB%8D%E0%AA%A4%E0%AB%87%2C%20%E0%AA%AE%E0%AA%BE%E0%AA%B0%E0%AB%87%20%E0%AA%9C%E0%AA%AE%E0%AB%80%E0%AA%A8%E0%AA%A8%E0%AB%8B%20%E0%AA%B2%E0%AB%87%E0%AA%A8%E0%AB%8D%E0%AA%A1%20%E0%AA%B9%E0%AB%87%E0%AA%B2%E0%AB%8D%E0%AA%A5%20%E0%AA%B0%E0%AA%BF%E0%AA%AA%E0%AB%8B%E0%AA%B0%E0%AB%8D%E0%AA%9F%20%E0%AA%95%E0%AA%B0%E0%AA%BE%E0%AA%B5%E0%AA%B5%E0%AB%8B%20%E0%AA%9B%E0%AB%87." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>આજે જ ચેકઅપ કરાવો</a>
+    </div>
+    <div class="report reveal" id="report">
+      <div class="report-top"><img src="assets/icon.png" alt=""><div><b>લેન્ડ હેલ્થ રિપોર્ટ</b><small>JAMIN DARSHAN</small></div><span class="plus">+</span></div>
+      <div class="report-meta"><span>દર્દી : <b>તમારી જમીન</b></span><span>તપાસનાર : જમીન દર્શન</span></div>
+      <div class="report-head"><span>તપાસ</span><span>પરિણામ</span></div>
+      <div class="check"><div><b>7/12 અને 8-અ</b><small>માલિકનું નામ અને જમીનનો પ્રકાર</small></div><span class="ok"><svg><use href="#i-check"/></svg>નોર્મલ</span></div>
+      <div class="check"><div><b>હક્કપત્રક (નમૂના નં. 6)</b><small>જૂની બધી નોંધો</small></div><span class="ok"><svg><use href="#i-check"/></svg>નોર્મલ</span></div>
+      <div class="check"><div><b>ટાઇટલ ક્લિયર</b><small>જૂના રેકોર્ડની વકીલ દ્વારા તપાસ</small></div><span class="ok"><svg><use href="#i-check"/></svg>નોર્મલ</span></div>
+      <div class="check"><div><b>બોજો / લોન</b><small>જમીન પર કોઈ બેંક બોજો નથી ને?</small></div><span class="ok"><svg><use href="#i-check"/></svg>નોર્મલ</span></div>
+      <div class="check"><div><b>NA અને ઝોન</b><small>બિનખેતી હુકમ અને ઝોનની ચકાસણી</small></div><span class="ok"><svg><use href="#i-check"/></svg>નોર્મલ</span></div>
+      <div class="check"><div><b>રસ્તો અને માપણી</b><small>કાયદેસર રસ્તો અને સાચું માપ</small></div><span class="ok"><svg><use href="#i-check"/></svg>નોર્મલ</span></div>
+      <div class="score"><span>જમીન હેલ્થ સ્કોર</span><div class="bar"><i></i></div><em id="scoreNum">0%</em></div>
+    </div>
+  </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section id="documents">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Document Checklist</span>
+      <h2>જમીન લેતા પહેલા આ 5 ડોક્યુમેન્ટ જરૂર જુઓ</h2>
+      <p>આ કાગળો બરાબર હોય તો જ સોદો સુરક્ષિત. ચકાસણીમાં અમે મદદ કરીશું.</p>
+      <div class="divider"><i></i><b></b><i></i></div>
+    </div>
+    <div class="docs-grid">
+      <div class="doc reveal"><span class="num">1</span><div class="paper"><b>7/12</b><i></i><i></i><i></i><span class="tick"><svg><use href="#i-check"/></svg></span></div><h3>7/12 નો ઉતારો</h3><p>જમીનનો માલિક કોણ છે અને જમીનનો પ્રકાર</p></div>
+      <div class="doc reveal"><span class="num">2</span><div class="paper"><b>8-અ</b><i></i><i></i><i></i><span class="tick"><svg><use href="#i-check"/></svg></span></div><h3>8-અ નો ઉતારો</h3><p>ખાતા નંબર અને ખાતેદારની બધી જમીનની વિગત</p></div>
+      <div class="doc reveal"><span class="num">3</span><div class="paper"><b>નં. 6</b><i></i><i></i><i></i><span class="tick"><svg><use href="#i-check"/></svg></span></div><h3>હક્કપત્રક</h3><p>ગામ નમૂના નં. 6 માં જમીનની બધી જૂની નોંધો</p></div>
+      <div class="doc reveal"><span class="num">4</span><div class="paper"><b>TITLE</b><i></i><i></i><i></i><span class="tick"><svg><use href="#i-check"/></svg></span></div><h3>ટાઇટલ ક્લિયર રિપોર્ટ</h3><p>વકીલ દ્વારા જૂના રેકોર્ડની સંપૂર્ણ તપાસ</p></div>
+      <div class="doc reveal"><span class="num">5</span><div class="paper"><b>NA</b><i></i><i></i><i></i><span class="tick"><svg><use href="#i-check"/></svg></span></div><h3>NA હુકમ અને નકશો</h3><p>પ્લોટ લેતા હોવ તો NA મંજૂરી અને લે-આઉટ જુઓ</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Sell in 3 Steps</span>
+      <h2>જમીન વેચો ફક્ત 3 સ્ટેપમાં</h2>
+      <p>વેચાણની બધી ઝંઝટ અમારી — તમને મળે સાચો ભાવ અને સુરક્ષિત સોદો.</p>
+      <div class="divider"><i></i><b></b><i></i></div>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">1</div><h3>અમને કૉલ કરો</h3><p>જમીનની માહિતી અને લોકેશન આપો.</p></div>
+      <div class="step reveal"><div class="n">2</div><h3>સાચો ભાવ</h3><p>ડોક્યુમેન્ટ ચેક કરી માર્કેટ પ્રમાણે ભાવ.</p></div>
+      <div class="step reveal"><div class="n">3</div><h3>સુરક્ષિત સોદો</h3><p>યોગ્ય ખરીદનાર સાથે દસ્તાવેજ સુધી સાથ.</p></div>
+    </div>
+    <div class="process-cta reveal"><a class="btn btn-green" href="tel:+918200017579"><svg><use href="#i-call"/></svg>આજે જ કૉલ કરો</a></div>
+  </div>
+</section>
+
+<!-- LATEST INSTAGRAM REELS (filled automatically from insta/reels.json; stays hidden when empty) -->
+<section id="insta-reels" hidden>
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Latest on Instagram</span>
+      <h2>અમારી લેટેસ્ટ રીલ્સ</h2>
+      <p>Instagram પર મૂકેલી નવી રીલ્સ — અહીં આપમેળે આવી જાય છે.</p>
+      <div class="divider"><i></i><b></b><i></i></div>
+    </div>
+    <div class="videos-grid" id="instaGrid"></div>
+    <div style="text-align:center;margin-top:28px"><a class="btn btn-green" href="https://www.instagram.com/jamindarshan/" target="_blank" rel="noopener">Instagram પર Follow કરો</a></div>
+  </div>
+</section>
+<script>
+(function(){
+  fetch('insta/reels.json', {cache:'no-store'}).then(function(r){ return r.ok ? r.json() : []; }).then(function(list){
+    if (!list || !list.length) return;
+    var grid = document.getElementById('instaGrid');
+    list.slice(0, 6).forEach(function(it){
+      var a = document.createElement('a'); a.className = 'reel'; a.href = it.permalink; a.target = '_blank'; a.rel = 'noopener';
+      var img = document.createElement('img'); img.src = it.thumb; img.alt = ''; img.loading = 'lazy'; a.appendChild(img);
+      var p = document.createElement('span'); p.className = 'play'; p.innerHTML = '<svg><use href="#i-play"/></svg>'; a.appendChild(p);
+      var t = document.createElement('span'); t.textContent = it.title || ''; a.appendChild(t);
+      grid.appendChild(a);
+    });
+    document.getElementById('insta-reels').hidden = false;
+  }).catch(function(){});
+})();
+</script>
+
+<!-- VIDEOS -->
+<section id="videos">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow">Watch &amp; Learn</span>
+      <h2>અમારા વિડિયો</h2>
+      <p>જમીન ખરીદ-વેચાણની ઉપયોગી માહિતી — ટૂંકા વિડિયોમાં.</p>
+      <div class="divider"><i></i><b></b><i></i></div>
+    </div>
+    <div class="videos-grid">
+      <button class="reel reveal" data-src="videos/intro.mp4"><img src="videos/intro.jpg" alt="" loading="lazy"><span class="play"><svg><use href="#i-play"/></svg></span><span>અમને કેમ પસંદ કરો?</span></button>
+      <button class="reel reveal" data-src="videos/documents.mp4"><img src="videos/documents.jpg" alt="" loading="lazy"><span class="play"><svg><use href="#i-play"/></svg></span><span>5 જરૂરી ડોક્યુમેન્ટ</span></button>
+      <button class="reel reveal" data-src="videos/land-health-report.mp4"><img src="videos/land-health-report.jpg" alt="" loading="lazy"><span class="play"><svg><use href="#i-play"/></svg></span><span>લેન્ડ હેલ્થ રિપોર્ટ</span></button>
+      <button class="reel reveal" data-src="videos/sell-3-steps.mp4"><img src="videos/sell-3-steps.jpg" alt="" loading="lazy"><span class="play"><svg><use href="#i-play"/></svg></span><span>3 સ્ટેપમાં જમીન વેચો</span></button>
+      <button class="reel reveal" data-src="videos/property-types.mp4"><img src="videos/property-types.jpg" alt="" loading="lazy"><span class="play"><svg><use href="#i-play"/></svg></span><span>અમારી પાસે બધું જ છે</span></button>
+      <button class="reel reveal" data-src="videos/earth-zoom.mp4"><img src="videos/earth-zoom.jpg" alt="" loading="lazy"><span class="play"><svg><use href="#i-play"/></svg></span><span>આકાશથી જમીન સુધી</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="head reveal">
+      <span class="eyebrow" style="color:var(--gold)">Contact Us</span>
+      <h2>આજે જ સંપર્ક કરો</h2>
+      <p>જમીન ખરીદવી હોય, વેચવી હોય કે ફક્ત સલાહ જોઈતી હોય — અમે મદદ કરીશું.</p>
+      <div class="divider"><i></i><b></b><i></i></div>
+    </div>
+    <div class="contact-grid">
+      <div class="people reveal">
+        <div class="hotline">
+          <div class="hl-top"><img src="assets/icon.png" alt=""><div><span class="hl-label">જમીન દર્શન</span><span class="hl-sub">જમીન અને પ્રોપર્ટી માટે સીધો સંપર્ક</span></div></div>
+          <a class="hl-num" href="tel:+918200017579">82000 17579</a>
+          <div class="hl-acts">
+            <a class="btn btn-wa" href="https://wa.me/918200017579" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp કરો</a>
+          </div>
+          <div class="hl-mail"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 7.2L4 7.3V17h16V7.3l-8 4.9ZM5.2 7 12 11.1 18.8 7H5.2Z"/></svg><a href="mailto:jamindarshan15@gmail.com">jamindarshan15@gmail.com</a></div>
+        </div>
+        <div class="social">
+          <span class="social-title">સોશિયલ મીડિયા પર અમને ફોલો કરો</span>
+          <div class="social-links">
+            <a class="soc ig" href="https://www.instagram.com/jamindarshan/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM12 2c-2.7 0-3 0-4.1.1-4 .2-5.6 1.8-5.8 5.8C2 9 2 9.3 2 12s0 3 .1 4.1c.2 4 1.8 5.6 5.8 5.8 1.1.1 1.4.1 4.1.1s3 0 4.1-.1c4-.2 5.6-1.8 5.8-5.8.1-1.1.1-1.4.1-4.1s0-3-.1-4.1c-.2-4-1.8-5.6-5.8-5.8C15 2 14.7 2 12 2Zm0 1.8c2.7 0 3 0 4 .1 3 .1 4 1.2 4.1 4.1.1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.9-1.2 4-4.1 4.1-1 .1-1.3.1-4 .1s-3 0-4-.1c-3-.1-4-1.2-4.1-4.1-.1-1-.1-1.3-.1-4s0-3 .1-4C3.9 5 5 4 7.9 3.9c1-.1 1.4-.1 4.1-.1Z"/></svg><span>Instagram</span></a>
+            <a class="soc fb" href="#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.5 1.6-1.5h1.7V4.4c-.3 0-1.3-.1-2.4-.1-2.4 0-4.1 1.5-4.1 4.2v2.3H7.6V14h2.7v8h3.2Z"/></svg><span>Facebook</span></a>
+            <a class="soc yt" href="https://www.youtube.com/@JaminDarshan" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15V9l5.2 3L10 15Z"/></svg><span>YouTube</span></a>
+          </div>
+        </div>
+      </div>
+
+      <form class="form reveal" id="inquiry">
+        <h3>તમારી જરૂરિયાત જણાવો</h3>
+        <p>ફોર્મ ભરો — તમારો મેસેજ સીધો અમારા WhatsApp પર આવશે.</p>
+        <div class="field">
+          <label>તમારે શું કરવું છે?</label>
+          <div class="chips">
+            <label><input type="radio" name="need" value="જમીન/પ્રોપર્ટી ખરીદવી છે" checked><span>ખરીદવી છે</span></label>
+            <label><input type="radio" name="need" value="જમીન/પ્રોપર્ટી વેચવી છે"><span>વેચવી છે</span></label>
+            <label><input type="radio" name="need" value="લેન્ડ હેલ્થ રિપોર્ટ / ડોક્યુમેન્ટ ચેક કરાવવા છે"><span>ડોક્યુમેન્ટ ચેક</span></label>
+          </div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-name">નામ</label><input id="f-name" name="name" required autocomplete="name" placeholder="તમારું નામ"></div>
+          <div class="field"><label for="f-phone">મોબાઇલ નંબર</label><input id="f-phone" name="phone" type="tel" required inputmode="numeric" pattern="[0-9 +]{10,14}" autocomplete="tel" placeholder="98XXX XXXXX"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-type">પ્રોપર્ટીનો પ્રકાર</label>
+            <select id="f-type" name="type">
+              <option>ખેતીની જમીન</option><option>NA પ્લોટ / સ્કીમ</option><option>રહેણાક (બંગલા / પ્લોટ / ફ્લેટ)</option><option>કોમર્શિયલ (દુકાન / શોપ / ઓફિસ)</option><option>ઈન્ડસ્ટ્રીયલ પ્લોટ / જમીન</option><option>અન્ય</option>
+            </select></div>
+          <div class="field"><label for="f-loc">ગામ / શહેર</label><input id="f-loc" name="loc" placeholder="લોકેશન"></div>
+        </div>
+        <div class="field"><label for="f-msg">વધુ વિગત (વૈકલ્પિક)</label><textarea id="f-msg" name="msg" rows="3" placeholder="બજેટ, વીઘા / ચો.વાર, વગેરે"></textarea></div>
+        <a class="btn btn-wa" id="sendWa" href="https://wa.me/918200017579" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp પર મોકલો</a>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="brand"><span class="plate"><img src="assets/logo.png" alt="Jamin Darshan" width="1400" height="598"></span><span class="tag">વિશ્વાસના પાયા પર સમૃદ્ધિનું નિર્માણ</span></div>
+      <nav><a href="#services">સેવાઓ</a><a href="#health">હેલ્થ રિપોર્ટ</a><a href="#documents">ડોક્યુમેન્ટ</a><a href="#videos">વિડિયો</a><a href="#contact">સંપર્ક</a></nav>
+    </div>
+    <div class="copy">© <span id="yr">2026</span> Jamin Darshan · Land &amp; Property Consultants · Gujarat</div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/918200017579" target="_blank" rel="noopener" aria-label="WhatsApp પર વાત કરો"><svg><use href="#i-wa"/></svg></a>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="વિડિયો">
+  <button class="x" aria-label="બંધ કરો">×</button>
+  <video id="modalVid" controls playsinline></video>
+</div>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  var btn = document.querySelector('.menu-btn'), menu = document.getElementById('menu');
+  btn.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  menu.addEventListener('click', function(e){ if (e.target.tagName === 'A') { menu.classList.remove('open'); btn.setAttribute('aria-expanded', false); } });
+
+  // Reveal on scroll + health report animation
+  var report = document.getElementById('report'), scoreNum = document.getElementById('scoreNum');
+  function runReport(){
+    if (report.classList.contains('run')) return;
+    report.classList.add('run');
+    var oks = report.querySelectorAll('.ok');
+    oks.forEach(function(o, i){ o.style.transitionDelay = (i * 0.4) + 's'; });
+    var n = 0, t = setInterval(function(){ n += 2; scoreNum.textContent = n + '%'; if (n >= 96) clearInterval(t); }, 54);
+  }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (!en.isIntersecting) return;
+        en.target.classList.add('in');
+        if (en.target === report) runReport();
+        io.unobserve(en.target);
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(function(el, i){
+      el.style.transitionDelay = ((i % 6) * 0.06) + 's';
+      io.observe(el);
+    });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+    runReport();
+  }
+
+  // Hero video: autoplay on wider screens / good connections only
+  var hv = document.getElementById('heroVid'), sb = document.getElementById('soundBtn');
+  var saveData = navigator.connection && navigator.connection.saveData;
+  if (!saveData && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    hv.preload = 'auto';
+    hv.play().catch(function(){});
+  }
+  sb.addEventListener('click', function(){
+    hv.muted = !hv.muted;
+    if (hv.paused) hv.play();
+    sb.querySelector('use').setAttribute('href', hv.muted ? '#i-mute' : '#i-sound');
+    sb.setAttribute('aria-label', hv.muted ? 'અવાજ ચાલુ કરો' : 'અવાજ બંધ કરો');
+  });
+
+  // Video modal
+  var modal = document.getElementById('modal'), mv = document.getElementById('modalVid');
+  document.querySelectorAll('.reel').forEach(function(r){
+    r.addEventListener('click', function(){
+      hv.pause();
+      mv.src = r.dataset.src;
+      modal.classList.add('open');
+      mv.play().catch(function(){});
+    });
+  });
+  function closeModal(){ mv.pause(); mv.removeAttribute('src'); mv.load(); modal.classList.remove('open'); }
+  modal.addEventListener('click', function(e){ if (e.target === modal || e.target.classList.contains('x')) closeModal(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && modal.classList.contains('open')) closeModal(); });
+
+  // Inquiry form -> WhatsApp
+  var form = document.getElementById('inquiry'), send = document.getElementById('sendWa');
+  function buildLink(){
+    var f = form;
+    var lines = [
+      'નમસ્તે Jamin Darshan,',
+      f.need.value + '.',
+      '',
+      'નામ: ' + f.name.value.trim(),
+      'મોબાઇલ: ' + f.phone.value.trim(),
+      'પ્રોપર્ટી: ' + f.type.value
+    ];
+    if (f.loc.value.trim()) lines.push('લોકેશન: ' + f.loc.value.trim());
+    if (f.msg.value.trim()) lines.push('વિગત: ' + f.msg.value.trim());
+    send.href = 'https://wa.me/918200017579?text=' + encodeURIComponent(lines.join('\n'));
+  }
+  form.addEventListener('input', buildLink);
+  form.addEventListener('change', buildLink);
+  form.addEventListener('submit', function(e){ e.preventDefault(); });
+  send.addEventListener('click', function(e){
+    if (!form.name.value.trim() || !form.phone.value.trim()) { e.preventDefault(); form.reportValidity(); return; }
+    buildLink();
+  });
+  buildLink();
+})();
+</script>
+</body>
+</html>
