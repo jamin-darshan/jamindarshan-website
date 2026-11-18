@@ -506,12 +506,14 @@ footer{background:#000f07;color:#9fb5a7;padding:48px 0 28px;font-size:15px}
 </section>
 <script>
 (function(){
-  fetch('insta/reels.json', {cache:'no-store'}).then(function(r){ return r.ok ? r.json() : []; }).then(function(list){
+  // the reel list is refreshed every hour by GitHub (jamin-darshan/jamindarshan-website), so the main site never needs re-uploading
+  var BASE = 'https://jamin-darshan.github.io/jamindarshan-website/';
+  fetch(BASE + 'insta/reels.json', {cache:'no-store'}).then(function(r){ return r.ok ? r.json() : []; }).then(function(list){
     if (!list || !list.length) return;
     var grid = document.getElementById('instaGrid');
     list.slice(0, 6).forEach(function(it){
       var a = document.createElement('a'); a.className = 'reel'; a.href = it.permalink; a.target = '_blank'; a.rel = 'noopener';
-      var img = document.createElement('img'); img.src = it.thumb; img.alt = ''; img.loading = 'lazy'; a.appendChild(img);
+      var img = document.createElement('img'); img.src = BASE + it.thumb; img.alt = ''; img.loading = 'lazy'; a.appendChild(img);
       var p = document.createElement('span'); p.className = 'play'; p.innerHTML = '<svg><use href="#i-play"/></svg>'; a.appendChild(p);
       var t = document.createElement('span'); t.textContent = it.title || ''; a.appendChild(t);
       grid.appendChild(a);
