@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '17 * * * *'      # every hour: pick up new Instagram reels
+    - cron: '*/10 * * * *'    # every 10 minutes: pick up new Instagram reels
   workflow_dispatch:
 
 permissions:
@@ -29,9 +29,18 @@ jobs:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
         run: python3 .github/scripts/fetch_reels.py
+      - name: Anything new?
+        id: diff
+        run: |
+          curl -s https://jamin-darshan.github.io/jamindarshan-website/insta/reels.json -o live.json || true
+          if [ "${{ github.event_name }}" != "schedule" ] || ! cmp -s live.json insta/reels.json; then echo "changed=true" >> "$GITHUB_OUTPUT"; else echo "changed=false" >> "$GITHUB_OUTPUT"; fi
+          rm -f live.json
       - uses: actions/configure-pages@v5
+        if: steps.diff.outputs.changed == 'true'
       - uses: actions/upload-pages-artifact@v3
+        if: steps.diff.outputs.changed == 'true'
         with:
           path: .
       - id: deployment
+        if: steps.diff.outputs.changed == 'true'
         uses: actions/deploy-pages@v4
